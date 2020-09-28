@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        .button 
+        {
+            background-color: #3485ff;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            width:200px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            border-radius: 12px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <h4 style="color:snow;">Layers</h4>
+            <br>
+            <a href="/Neo"><button id="btn1" class="button" value="MOD_LSTD_CLIM_M">Land Surface Temperature</button></a>
+            <br>
+            <a href="/Neo1"><button id="btn2" class="button" value="MOD14A1_M_FIRE">Forest Fire</button></a>
+            <br>
+            <a href="/Neo2"><button class="button" id="btn3" value="AVHRR_CLIM_M">Sea Surface Temperature</button></a>
+            <br>
+            <a href="/Neo3"><button class="button" id="btn4" value="GEBCO_BATHY">Bathymetry</button></a>
+            <br>
+            <a href="/Neo4"><button class="button" id="btn5" value="MOP_CO_M">Carbon Monooxide</button></a>
+            <br>
+            <a href="/Neo5"><button class="button" id="btn6" value="MY1DMM_CHLORA">Chlorophyll</button></a>
+            <br>
+            <a href="/Neo6"><button class="button" id="btn7" value="MOD15A2_M_LAI">Leaf Area Index</button></a>
+            <br>
+            <a href="/Neo7"><button class="button" id="btn8" value="AURA_NO2_M">Nitrogen Dioxide</button></a>
+            <br>
+            <a href="/Neo8"><button class="button" id="btn9" value="SEDAC_POP">Population</button></a>
+            <br>
+            <a href="/Neo9"><button class="button" id="btn10" value="TRMM_3B43M">Rainfall</button></a>
+            <br>
+            <a href="/Neo10"><button class="button" id="btn11" value="SRTM_RAMP2_TOPO">Topography</button></a>
+            <br>
+            <a href="/Neo11"><button class="button" id="btn12" value="MOD_143D_RR">True Color</button></a>
+            <br>
+            <a href="/Neo12"><button class="button" id="btn13" value="MOD_NDVI_M">Vegetation Index</button></a>
+            <br>
+            <a href="/Neo13"><button class="button" id="btn14" value="GISS_TA_M">Global Temperature Anomaly</button></a>
+            <br>
+            <h4 style="color:snow;">Destination</h4>
+            <div class="input-group" id="searchBox">
+                <input type="text" class="form-control" placeholder="GoTo" id="searchText"/>
+                <span class="input-group-btn">
+                    <button id="searchButton" class="btn btn-primary" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-9" id="globe">
+            <canvas id="canvasOne" width="1000" height="1000" style="width: 100%; height: auto; background-color: black;">
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+            
+        <script 
+        src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
+        type="text/javascript">
+        </script>
+        <script src="/static/NeoWorldWind3.js" type="text/javascript"></script>        
+        </div>
+    </div>
+</div>
+</body>
+</html>
