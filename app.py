@@ -26,6 +26,11 @@ def Neo():
 def neo_one():
     return render_template("Neo1.html")
 
+@app.route("/earthquake")
+def earthquake():
+    return render_template("index.html")
 
+
+    
 if __name__ == '__main__':
     app.run(debug=True)
