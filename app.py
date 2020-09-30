@@ -26,6 +26,54 @@ def Neo():
 def neo_one():
     return render_template("Neo1.html")
 
+@app.route("/Neo2")
+def neo_two():
+    return render_template("Neo2.html")
+
+@app.route("/Neo3")
+def neo_three():
+    return render_template("Neo3.html")
+
+@app.route("/Neo4")
+def neo_four():
+    return render_template("Neo4.html")
+
+@app.route("/Neo5")
+def neo_five():
+    return render_template("Neo5.html")
+
+@app.route("/Neo6")
+def neo_six():
+    return render_template("Neo6.html")
+
+@app.route("/Neo7")
+def neo_seven():
+    return render_template("Neo7.html")
+
+@app.route("/Neo8")
+def neo_eight():
+    return render_template("Neo8.html")
+
+@app.route("/Neo9")
+def neo_nine():
+    return render_template("Neo9.html")
+
+@app.route("/Neo10")
+def neo_ten():
+    return render_template("Neo10.html")
+
+@app.route("/Neo11")
+def neo_eleven():
+    return render_template("Neo11.html")
+
+@app.route("/Neo12")
+def neo_twelve():
+    return render_template("Neo12.html")
+
+@app.route("/Neo13")
+def neo_thirteen():
+    return render_template("Neo13.html")
+
 @app.route("/earthquake")
 def earthquake():
     return render_template("index.html")
