@@ -21,6 +21,13 @@
             border-radius: 12px;
             border: 5px solid black;
         }
+
+        p {
+            color: lightgray;
+            font-size: 20px;
+            text-align: justify;
+            font-family: 'Comic Sans MS';
+        }
     </style>
 </head>
 <body style="background-color: black;">
@@ -71,6 +78,11 @@
                 <canvas id="canvasOne" width="1000" height="1000" style="width: 100%; height: auto; background-color: black;">
                     Your browser does not support HTML5 Canvas.
                 </canvas>
+                <br>
+                <p>
+                    Land topography allows us to make maps of the features of the surface of the Earth. Topographic maps show the location, height, and shape of features like mountains and valleys, rivers, even the craters on volcanoes. Another way to think of topographic maps is that they are a picture of the three-dimensional (3-D) structure of the surface of the Earth. Flat maps can create a 3-D effect by making some parts of the map dark and other parts light. This is called 'shading' because it makes features on the surface look like they are casting shadows. This topographic map is made from data collected from three sources: NASA's Space Shuttle, Canada's Radarsat satellite, and topographic maps made by the U.S. Geological Survey.
+
+                </p>
 
                 <script src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
                         type="text/javascript">
@@ -80,4 +92,5 @@
         </div>
     </div>
 </body>
+{% endblock %}
 </html>
