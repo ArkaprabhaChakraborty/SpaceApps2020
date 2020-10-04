@@ -23,11 +23,16 @@ key = "HkyaRKrAG08v0FLeSPwUp7JR6rAEKVA6FO5vqZ8o"
 
 rev = requests.get("https://api.nasa.gov/planetary/apod?api_key="+key)
 rev = rev.json()
-image = rev['url']
+image = ""
+if 'url' in rev:
+    image = rev['url']
 i = "https://www.google.com/earth/assets/static/images/overview/overview__get-started__mobile-image.jpg"
-if (image.find('youtube')):
+if (image.find('youtube') or not image):
     image=i
-ex = rev['explanation']
+if 'explanation' in rev:
+    ex = rev['explanation']
+else:
+    ex = "Welcome to AIDA."
 app = Flask(__name__)
 @app.route("/",methods = ['GET','POST'])
 def page():
