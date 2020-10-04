@@ -27,7 +27,7 @@ image = ""
 if 'url' in rev:
     image = rev['url']
 i = "https://www.google.com/earth/assets/static/images/overview/overview__get-started__mobile-image.jpg"
-if (image.find('youtube') or not image):
+if (image.find('youtube') !=-1 or not image):
     image=i
 if 'explanation' in rev:
     ex = rev['explanation']
